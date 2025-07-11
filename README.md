@@ -1,23 +1,92 @@
-# Resume Insight Extractor
 
-Recruiter-ready AI tool for extracting key candidate information from resumes (PDF, DOCX, or ZIP of resumes). Built for talent acquisition teams to streamline candidate screening and data extraction.
+<div align="center">
+
+# 🚀 RecruiterLens
+
+[![React](https://img.shields.io/badge/React-19.1.0-blue?logo=react)](https://react.dev/)
+[![Gemini AI](https://img.shields.io/badge/Gemini%20AI-Google-blueviolet?logo=google)](https://ai.google.dev/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+<b>AI Resume Data Extractor & ATS Match for Recruiters</b>
+
+</div>
+
+> Professional, recruiter-focused AI tool for extracting candidate information and ATS match scores from resumes. Built for talent teams to streamline screening, keyword analysis, and data export.
+
+---
 
 ## Features
-- **Bulk Resume Upload:** Upload single or multiple resumes (PDF/DOCX/ZIP)
-- **Automated Data Extraction:** Extracts name, contact info, education, experience, skills, and more
-- **ATS Score:** Each resume gets an AI-powered ATS score (0-100) for recruiter relevance
-- **ATS Match Check:** Paste a job description and get a transparent ATS match score, matched/missing keywords, and summary
-- **CSV Export:** Download extracted data for ATS or spreadsheet use
+
+- **Bulk Resume Upload:** PDF, DOCX, ZIP
+- **Automated Data Extraction:** Name, contact info, experience, skills
+- **ATS Score:** AI-powered score (0-100)
+- **ATS Match Check:** Paste job description for transparent ATS match (score, matched/missing keywords, summary)
+- **CSV Export:** Download extracted data
 - **Error Reporting:** See which files failed and why
 - **Fast & Secure:** Runs locally, no resume data leaves your machine
 
-## Getting Started
+---
 
-### Prerequisites
-- Node.js (v18+ recommended)
+## Quick Start
 
-### Installation
-1. Clone this repo:
+**Prerequisites:** Node.js (v18+ recommended)
+
+**Install & Run:**
+```sh
+git clone https://github.com/GudiseMeghana/RecruiterLens.git
+cd RecruiterLens
+npm install
+npm run dev
+```
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+**Configure Gemini API Key:**
+Create a `.env.local` file:
+```env
+GEMINI_API_KEY=your-key-here
+```
+
+---
+
+## Usage
+
+1. Upload resumes (PDF, DOCX, or ZIP)
+2. Click **Extract Information**
+3. Download as CSV
+4. Paste job description and click **Check ATS Match**
+
+---
+
+## ATS Match Transparency
+
+- **Score (0-100):** Resume vs. job description
+- **Matched Keywords:** Found in resume
+- **Missing Keywords:** Not found in resume
+- **Summary:** One-sentence match quality
+
+---
+
+## Project Structure
+
+- `App.tsx` — Main UI
+- `components/` — FileUpload, ResultsDisplay, LoadingSpinner
+- `services/` — File parsing & AI extraction
+- `utils/` — CSV export utility
+- `outputs/` — Downloaded CSV files
+
+---
+
+## For Recruiters
+
+- Fast, accurate, transparent
+- Bulk resume processing
+- Clear error messages
+- Export-ready for ATS/Excel
+
+---
+
+## License
+MIT
    ```sh
    git clone https://github.com/your-org/resume-data-extractor.git
    cd resume-data-extractor
