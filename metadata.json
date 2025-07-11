@@ -1,0 +1,6 @@
+{
+  "name": "Resume Data Extractor",
+  "description": "An application to upload resumes (PDF or DOCX) and extract key information like company name, role, duration, skills, industry, and location using AI. Results can be downloaded as a CSV file.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
