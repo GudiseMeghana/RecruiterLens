@@ -86,7 +86,7 @@ GEMINI_API_KEY=your-key-here
 ---
 
 ## Installation
-
+1. Clone Repository
    ```sh
    git clone https://github.com/your-org/resume-data-extractor.git
    cd resume-data-extractor
