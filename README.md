@@ -5,7 +5,7 @@
 
 [![React](https://img.shields.io/badge/React-19.1.0-blue?logo=react)](https://react.dev/)
 [![Gemini AI](https://img.shields.io/badge/Gemini%20AI-Google-blueviolet?logo=google)](https://ai.google.dev/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 
 <b>AI Resume Data Extractor & ATS Match for Recruiters</b>
 
@@ -105,7 +105,7 @@ MIT
    ```
 
 ## Usage
-1. Open [http://localhost:5173](http://localhost:5173) in your browser
+1. Open [recruiter-lens.vercel.app](recruiter-lens.vercel.app) in your browser
 2. Upload resumes (PDF, DOCX, or ZIP)
 3. Click "Extract Information"
 4. Review extracted data and download as CSV
