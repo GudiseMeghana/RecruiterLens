@@ -25,37 +25,6 @@
 - **Error Reporting:** See which files failed and why
 - **Fast & Secure:** Runs locally, no resume data leaves your machine
 
----
-
-## Quick Start
-
-**Prerequisites:** Node.js (v18+ recommended)
-
-**Install & Run:**
-```sh
-git clone https://github.com/GudiseMeghana/RecruiterLens.git
-cd RecruiterLens
-npm install
-npm run dev
-```
-Open [recruiter-lens.vercel.app](recruiter-lens.vercel.app) in your browser.
-
-**Configure Gemini API Key:**
-Create a `.env.local` file:
-```env
-GEMINI_API_KEY=your-key-here
-```
-
----
-
-## Usage
-
-1. Upload resumes (PDF, DOCX, or ZIP)
-2. Click **Extract Information**
-3. Download as CSV
-4. Paste job description and click **Check ATS Match**
-
----
 
 ## ATS Match Transparency
 
@@ -111,26 +80,7 @@ GEMINI_API_KEY=your-key-here
 4. Review extracted data and download as CSV
 5. Paste a job description and click "Check ATS Match" for a detailed score and keyword analysis
 
-## ATS Match Transparency
-- The ATS Match feature provides:
-  - **Score (0-100):** How well the resume matches the job description
-  - **Matched Keywords:** Keywords from the job description found in the resume
-  - **Missing Keywords:** Important keywords not found in the resume
-  - **Summary:** One-sentence explanation of the match quality
 
-## Project Structure
-- `App.tsx` - Main application logic and UI
-- `components/` - UI components (FileUpload, ResultsDisplay, LoadingSpinner)
-- `services/` - File parsing and AI extraction logic (including ATS match)
-- `utils/` - CSV export utility
-- `outputs/` - Downloaded CSV files
-
-## For Recruiters
-- Designed for speed and accuracy
-- Handles bulk resume processing
-- Clear error messages for problematic files
-- Export-ready for ATS or Excel
-- Transparent ATS scoring and match analysis
 
 ## Contributing
 Pull requests welcome! For major changes, open an issue first to discuss what you’d like to change.
